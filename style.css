@@ -16,10 +16,17 @@ body {
 
 .center {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 iframe {
   border: none;
+}
+
+gh-stats {
+  float: left;
+}
+
+gh-langs {
+  float: right;
 }
