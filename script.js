@@ -24,3 +24,6 @@ function goHome(from) {
       break;
   }
 }
+function gotoDiscordServer() {
+  window.location.href = "https://discord.com/invite";
+}
