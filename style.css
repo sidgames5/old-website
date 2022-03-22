@@ -29,3 +29,16 @@ gh-stats {
 gh-langs {
   float: right;
 }
+
+.button {
+  background-color: #9955FF;
+  border: #0000FF;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
