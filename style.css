@@ -42,3 +42,8 @@ button {
   margin: 4px 2px;
   cursor: pointer;
 }
+
+#menu-bar {
+  background-color: #bda9a2;
+  border: none;
+}
