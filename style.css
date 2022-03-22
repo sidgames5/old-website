@@ -15,7 +15,9 @@ body {
 }
 
 .center {
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 iframe {
@@ -46,4 +48,10 @@ button {
 #menu-bar {
   background-color: #bda9a2;
   border: none;
+}
+
+#game-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
