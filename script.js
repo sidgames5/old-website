@@ -17,3 +17,10 @@ function gotoGamesPage(from) {
       break;
   }
 }
+function goHome(from) {
+  switch (from) {
+    case "games":
+      window.location.href = "../index.html";
+      break;
+  }
+}
