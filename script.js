@@ -27,3 +27,6 @@ function goHome(from) {
 function gotoDiscordServer() {
   window.location.href = "https://discord.com/invite";
 }
+function gotoSoundSpace() {
+  window.location.href = "https://keystone-games.github.io/soundspace/";
+}
