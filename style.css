@@ -45,7 +45,7 @@ button {
   cursor: pointer;
 }
 
-#menu-bar {
+.header {
   background-color: #bda9a2;
   border: none;
 }
