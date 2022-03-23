@@ -17,9 +17,9 @@ function gotoGamesPage(from) {
       break;
   }
 }
-function goHome(from) {
-  switch (from) {
-    case "games":
+function goHome(num) {
+  switch (num) {
+    case 1:
       window.location.href = "../index.html";
       break;
   }
