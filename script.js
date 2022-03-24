@@ -30,3 +30,13 @@ function gotoDiscordServer() {
 function gotoSoundSpace() {
   window.location.href = "https://keystone-games.github.io/soundspace/";
 }
+function gotoProjectsPage(from) {
+  switch (from) {
+    case "home":
+      window.location.href = "projects/";
+      break;
+  
+    default:
+      break;
+  }
+}
