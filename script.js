@@ -20,7 +20,7 @@ function gotoGamesPage(from) {
 function goHome(num) {
   switch (num) {
     case 1:
-      window.location.href = "../index.html";
+      window.location.href = "../";
       break;
   }
 }
