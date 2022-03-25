@@ -40,3 +40,11 @@ function gotoProjectsPage(from) {
       break;
   }
 }
+
+function gotoProject(name) {
+  switch (name) {
+    case "codeMatrix":
+      window.location.href = "../codematrix/"
+      break;
+  }
+}
