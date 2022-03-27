@@ -35,7 +35,7 @@ function gotoProjectsPage(from) {
     case "home":
       window.location.href = "projects/";
       break;
-  
+
     default:
       break;
   }
@@ -44,7 +44,7 @@ function gotoProjectsPage(from) {
 function gotoProject(name) {
   switch (name) {
     case "codeMatrix":
-      window.location.href = "../codematrix/"
+      window.location.href = "../codematrix/";
       break;
   }
 }

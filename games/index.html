@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="description" content="Webpage description goes here" />
+    <meta charset="utf-8" />
+    <title>SidGames's Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../script.js"></script>
+  </head>
 
-<head>
-  <meta name="description" content="Webpage description goes here" />
-  <meta charset="utf-8">
-  <title>SidGames's Games</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="../style.css">
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="../script.js"></script>
-</head>
-
-<body>
-
-  <div class="container">
-    <div id="menu-bar" class="header" align=center style="align-items: center; justify-content: center;">
-      <h1 style="float: left;">My Games</h1>
-      <button class="button" onclick="goHome(1);">Home</button>
+  <body>
+    <div class="container">
+      <div
+        id="menu-bar"
+        class="header"
+        align="center"
+        style="align-items: center; justify-content: center"
+      >
+        <h1 style="float: left">My Games</h1>
+        <button class="button" onclick="goHome(1);">Home</button>
+      </div>
+      <div id="game-list">
+        <!-- <h2>Games made by my company</h2><br> -->
+        <table>
+          <thead>
+            <tr>
+              <td>
+                <h3>SoundSpace</h3>
+              </td>
+              <td>
+                <button class="button" onclick="gotoSoundSpace();">Play</button>
+              </td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <p>
+        You can donate to support my projcts through my
+        <a href="https://basiccorruption.itch.io">itch.io page</a>
+      </p>
     </div>
-    <div id="game-list">
-      <!-- <h2>Games made by my company</h2><br> -->
-      <table>
-        <thead>
-          <tr>
-            <td>
-              <h3>SoundSpace</h3>
-            </td>
-            <td><button class="button" onclick="gotoSoundSpace();">Play</button></td>
-          </tr>
-        </thead>
-      </table>
-    </div>
-    <p>You can donate to support my projcts through my <a href="https://basiccorruption.itch.io">itch.io page</a></p>
-  </div>
 
-  <script>
-  </script>
-
-</body>
-
+    <script></script>
+  </body>
 </html>
