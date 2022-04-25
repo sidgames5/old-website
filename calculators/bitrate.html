@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Online video recording bitrate calculator" />
+  <meta charset="utf-8">
+  <title>Video Recording Bitrate Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="SidGames5">
+  <link rel="stylesheet" href="../style.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+  
+<div class="container">
+  <h1>Bitrate Calculator</h1>
+  <div id="formula">
+    <h2>Steps to calculate</h2>
+    <ul>
+      <li>1. Multiply video width by height to get pixel count (example: 2560 x 1080 = 604800)</li>
+      <li>2. Multiply the pixel count by frame rate to get pixels per second (example: 604800 x 60 = 36288000)</li>
+      <li>3. Multiply the pixels per second by 8 to get bitrate (example: 36288000 x 8 = 290304000)</li>
+    </ul>
+    <p>
+      Remember that recording software such as OpenBroadcasterSoftware (OBS) do not take in a bit per second bitrate. If you record using OBS, you must convert the format. Since it takes in a number for kilobits per second, you must divide the output number by 1000. So if I was using this calculator, my final number would be 290304 Kb/s (209 Mb/s). Please note that these numbers are not optimal for streaming. It will use up a lot network bandwidth and your stream might crash. Please do not use this calculator for streaming.
+    </p>
+  </div>
+  <div id="calculator">
+    <h2>Interactive calculator coming soon!</h2>
+  </div>
+</div>
+
+<script>
+</script>
+
+</body>
+</html>
