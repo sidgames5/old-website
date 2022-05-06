@@ -3,21 +3,26 @@ package;
 import flixel.FlxG;
 import flixel.FlxState;
 import flixel.text.FlxText;
+using StringTools;
 
 class PlayState extends FlxState
 {
 	var text:FlxText;
-	var framesSinceLastColorChange:Float = 0;
+	var framesSinceLastColorChange:Int = 0;
 	var frames:FlxText;
 
 	override public function create()
 	{
 		super.create();
 
-		text = new FlxText(0, 0, FlxG.width, "Hello World!");
-		text.setFormat(null, 16, 0xffffff, "center");
-		text.screenCenter(X);
+		text = new FlxText(0, 0, FlxG.width, "Hello World! I am changing colors every second!");
+		text.setFormat(null, 64, 0xffffff, "center");
+		text.screenCenter(XY);
 		add(text);
+
+		frames = new FlxText(0, FlxG.height - 16, FlxG.width, "0");
+		frames.setFormat(null, 16, 0xffffff, "center");
+		add(frames);
 	}
 
 	override public function update(elapsed:Float)
@@ -38,5 +43,8 @@ class PlayState extends FlxState
 			text.color.blue = colorB;
 			framesSinceLastColorChange = 0;
 		}
+
+		// update the frames counter with the variable framesSinceLastColorChange
+		frames.text = Std.string(framesSinceLastColorChange);
 	}
 }

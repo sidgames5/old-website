@@ -913,7 +913,7 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
-	app.meta.h["build"] = "79";
+	app.meta.h["build"] = "80";
 	app.meta.h["company"] = "HaxeFlixel";
 	app.meta.h["file"] = "flixel-test";
 	app.meta.h["name"] = "flixel-test";
@@ -4719,10 +4719,10 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	,frames: null
 	,create: function() {
 		flixel_FlxState.prototype.create.call(this);
-		this.text = new flixel_text_FlxText(0,0,flixel_FlxG.width,"Hello World!");
-		this.text.setFormat(null,16,16777215,"center");
+		this.text = new flixel_text_FlxText(0,0,flixel_FlxG.width,"Hello World! I am changing colors every second!");
+		this.text.setFormat(null,64,16777215,"center");
 		var _this = this.text;
-		var axes = flixel_util_FlxAxes.X;
+		var axes = flixel_util_FlxAxes.XY;
 		if(axes == null) {
 			axes = flixel_util_FlxAxes.XY;
 		}
@@ -4749,6 +4749,9 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 			_this.set_y((flixel_FlxG.height - _this.get_height()) / 2);
 		}
 		this.add(this.text);
+		this.frames = new flixel_text_FlxText(0,flixel_FlxG.height - 16,flixel_FlxG.width,"0");
+		this.frames.setFormat(null,16,16777215,"center");
+		this.add(this.frames);
 	}
 	,update: function(elapsed) {
 		flixel_FlxState.prototype.update.call(this,elapsed);
@@ -4765,6 +4768,7 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 			this.text.color |= colorB > 255 ? 255 : colorB < 0 ? 0 : colorB;
 			this.framesSinceLastColorChange = 0;
 		}
+		this.frames.set_text(Std.string(this.framesSinceLastColorChange));
 	}
 	,__class__: PlayState
 });
@@ -68947,7 +68951,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 563390;
+	this.version = 120132;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";
