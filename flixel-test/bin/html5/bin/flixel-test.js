@@ -913,7 +913,7 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
-	app.meta.h["build"] = "76";
+	app.meta.h["build"] = "79";
 	app.meta.h["company"] = "HaxeFlixel";
 	app.meta.h["file"] = "flixel-test";
 	app.meta.h["name"] = "flixel-test";
@@ -4707,6 +4707,7 @@ flixel_FlxState.prototype = $extend(flixel_group_FlxTypedGroup.prototype,{
 	,__properties__: $extend(flixel_group_FlxTypedGroup.prototype.__properties__,{get_subStateClosed:"get_subStateClosed",get_subStateOpened:"get_subStateOpened",set_bgColor:"set_bgColor",get_bgColor:"get_bgColor"})
 });
 var PlayState = function(MaxSize) {
+	this.framesSinceLastColorChange = 0;
 	flixel_FlxState.call(this,MaxSize);
 };
 $hxClasses["PlayState"] = PlayState;
@@ -4715,6 +4716,7 @@ PlayState.__super__ = flixel_FlxState;
 PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	text: null
 	,framesSinceLastColorChange: null
+	,frames: null
 	,create: function() {
 		flixel_FlxState.prototype.create.call(this);
 		this.text = new flixel_text_FlxText(0,0,flixel_FlxG.width,"Hello World!");
@@ -68945,7 +68947,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 386832;
+	this.version = 563390;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";

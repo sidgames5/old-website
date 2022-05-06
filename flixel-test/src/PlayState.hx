@@ -7,7 +7,8 @@ import flixel.text.FlxText;
 class PlayState extends FlxState
 {
 	var text:FlxText;
-	var framesSinceLastColorChange:Float;
+	var framesSinceLastColorChange:Float = 0;
+	var frames:FlxText;
 
 	override public function create()
 	{
