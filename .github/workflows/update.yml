@@ -6,7 +6,7 @@ name: Update
 # events but only for the master branch
 on:
   schedule:
-    - cron: '1,15,30,45 * * * *'
+    - cron: '0,15,30,45 * * * *'
   push:
   workflow_dispatch:
 
