@@ -20,6 +20,15 @@
   <p>
     It is server upgrade time! I decided to switch operating systems instead of upgrading the actual hardware. I chose Ubuntu server 22.04 LTS. Why server edition? Well the old way of accessing my server was VNC (because RCON did not work.) However, with Ubuntu server edition, we can use OpenSSH server and use the built-in SSH client on windows. Linux also has some pretty cool web interfaces. But running a non-graphical OS comes with some issues, with multi-tasking being the biggest. I have been trying to find a solution for this for a while but it hasn't been working. My friend Nathan has been working hard on the server and helping me out a lot.
   </p>
+  <h3>So what is the problem?</h3>
+  <p>
+    If you don't know much about minecraft servers, you probably think that our bungeecord network is running off of one single process. That is not what how a bungeecord network operates. A network is made up a host proxy (running bungeecord) and several smaller spigot servers. The proxy just handles players and them connecting, switching servers, and disconnecting. The spigot servers actually handle the games and worlds. I have a single computer and that will be running a minecraft server and also will be used as a NAS. Forget about the NAS for now since I don't have any hard drives yet. Since a bungeecord network has to run on multiple processes, it would be hard to run a network easily on a non-graphical OS.
+  </p>
+  <h3>Possible solutions</h3>
+  <p>
+    One solution I have considered is virtual machines. The main problem about VMs is networking. I might have figured it out but Nathan says we could possibly use docker.
+    My temporary solution (hosting on my main PC) isn't working either. As of right now, I am hosting the server on my main PC with right correct port forwarding settings on both the PC and router but it is not working. However, I did tell Nathan to change some DNS settings on the domain for the new website setup.
+  </p>
 </div>
 
 <script>
