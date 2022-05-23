@@ -7,12 +7,12 @@ const npm_expansions = [ "*nix Programming Mammals", "N00b Pwn M3", "N00b's Prog
 const npm_expansion = random(npm_expansions);
 console.log('github readme stats theme: "' + github_readme_stats_theme + '"')
 console.log('npm expansion: "' + npm_expansion + '"')
-fs.readFile('src/README.md', 'utf8', (err, data) => {
+fs.readFile('src/index.html', 'utf8', (err, data) => {
   if (err) {
     return console.error(err);
   }
   fs.writeFile(
-    "README.md",
+    "index.html",
     data
       .replace(/{{ github_readme_stats_theme }}/g, github_readme_stats_theme)
       .replace(/{{ npm_expansion }}/g, npm_expansion),
