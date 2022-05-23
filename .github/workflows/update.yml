@@ -38,4 +38,4 @@ jobs:
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git add .
         git commit -m "Update README.md"
-        git push https://github-actions[bot]:${{ secrets.TOKEN }}@github.com/basiccorruption/basiccorruption.git
+        git push https://github-actions[bot]:${{ secrets.TOKEN }}@github.com/basiccorruption/basiccorruption.github.io.git
