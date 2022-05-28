@@ -67,13 +67,16 @@
   </div>
 
   <script>
-	  function blank() { document.getElementById("typewriter").innerHTML == "" }
-	  blank();
+// 	  function blank() { document.getElementById("typewriter").innerHTML == "" }
+// 	  blank();
     var i = 0;
 var txt = 'This is the typewriter effect. I totally didn\'t steal this code from w3schools.'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
+	if (document.getElementById("typewriter").innerHTML != "") {
+		document.getElementById("typewriter").innerHTML = "";
+	}
   if (i < txt.length) {
     document.getElementById("typewriter").innerHTML += txt.charAt(i);
     i++;
