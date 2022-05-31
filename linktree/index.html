@@ -2,35 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta name="description" content="Webpage description goes here" />
-    <meta charset="utf-8">
-    <title>sid's link tree</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sid's Link Tree</title>
+
     <link rel="stylesheet" href="../style.css">
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+    <script src="links.js"></script>
 </head>
 
 <body>
-  
-	<div class="container">
-		<h1>SidGames5</h1>
-		<button onclick="website();">Website<button><br>
-		<button onclick="youtube();">YouTube<button><br>
-		<button onclick="kryptex();">Kryptex<button>
-	</div>
-
-	<script>
-		function website() {
-			window.location.href="https://basiccorruption.github.io";
-		}
-		function youtube() {
-			window.location.href="https://youtube.com/c/SidGames5";
-		}
-		function kryptex() {
-			window.location.href="http://youareanidiot.cc";
-		}
-	</script>
-
+    <div class="container">
+        <div class="top">
+            <h1>SidGames5</h1>
+            <p>Here are all of my links!</p>
+        </div>
+        <div class="links">
+            <details class="socialmedia">
+                <summary>Social Media</summary>
+                <button onclick="goto('youtube');">YouTube</button><br>
+                <button onclick="goto('discord');">Discord</button><br>
+                <button onclick="goto('tiktok');">TikTok</button><br>
+                <button onclick="goto('twitter');">Twitter</button><br>
+                <button onclick="goto('twitch');">Twitch</button><br>
+            </details>
+            <details class="others">
+                <summary>Other</summary>
+                <button onclick="goto('github');">GitHub</button><br>
+                <button onclick="goto('homepage');">Main Website Page</button>
+            </details>
+        </div>
+    </div>
 </body>
+
 </html>
