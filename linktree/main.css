@@ -1,0 +1,19 @@
+.top {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+button {
+    background-color: #9955ff;
+    border: #0000ff;
+    color: white;
+    /* padding: 10px 24px; */
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
