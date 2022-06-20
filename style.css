@@ -5,56 +5,14 @@
 }
 
 body {
-  background: rgb(153, 85, 255);
+  background: rgb(76.5, 42.5, 127.5);
   background: linear-gradient(
     90deg,
-    rgba(153, 85, 255, 1) 0%,
-    rgba(255, 64, 0, 1) 100%
+    rgba(76.5, 42.5, 127.5, 1) 0%,
+    rgba(127.5, 32, 0, 1) 100%
   );
 }
 
 * {
   font-family: "monsterrat", sans-serif;
-}
-
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-iframe {
-  border: none;
-}
-
-gh-stats {
-  float: left;
-}
-
-gh-langs {
-  float: right;
-}
-
-button {
-  background-color: #9955ff;
-  border: #0000ff;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.header {
-  background-color: #bda9a2;
-  border: none;
-}
-
-#game-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
