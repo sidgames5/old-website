@@ -1,7 +1,8 @@
 @import url("https://keystone-games.github.io/assets/fonts/monsterrat.ttf")
 @font-face {
-	font-family: "monsterrat";
-	src: url("https://keystone-games.github.io/assets/fonts/monsterrat.ttf");
+	font-family: "Monsterrat";
+	src: url("https://keystone-games.github.io/assets/fonts/monsterrat.ttf")
+	format("truetype");
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 * {
-	font-family: "monsterrat", sans-serif;
+	font-family: "Monsterrat", sans-serif;
 }
 
 a {
