@@ -1,16 +1,13 @@
 @font-face {
 	font-family: "Monsterrat";
-	src: url("https://keystone-games.github.io/assets/fonts/monsterrat.ttf")
-	format("truetype");
+	src: url("https://keystone-games.github.io/assets/fonts/monsterrat.ttf") format("truetype");
 }
 
 body {
 	background-color: #000;
-	background: linear-gradient(
-		90deg,
-		rgba(153, 85, 255, 0.5) 0%,
-		rgba(255, 64, 0, 0.5) 100%
-	);
+	background: linear-gradient(90deg,
+			rgba(153, 85, 255, 0.5) 0%,
+			rgba(255, 64, 0, 0.5) 100%);
 }
 
 * {
@@ -19,4 +16,8 @@ body {
 
 a {
 	color: #fff;
+}
+
+p {
+	font-size: large;
 }
