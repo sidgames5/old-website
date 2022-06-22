@@ -63,3 +63,21 @@ function typeWriter() {
   }
 }
 typeWriter();
+
+
+
+
+// var fixedTop = $(".fixed").offset().top;
+
+// $(window).scroll(function () {
+
+// 	var currentScroll = $(window).scrollTop();
+
+// 	if (currentScroll >= fixedTop) {
+// 		$(".fixed").css({
+// 			position: "fixed",
+// 			top: "0px"
+// 		});
+// 	}
+
+// });
