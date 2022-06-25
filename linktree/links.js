@@ -4,7 +4,7 @@ function goto(place) {
             window.location.href = "https://youtube.com/sidgames5";
             break;
         case "twitch":
-            window.location.href = "https://twitch.tv/sidplayzlive";
+            window.location.href = "https://twitch.tv/sidgames5";
             break;
         case "twitter":
             window.location.href = "https://twitter.com/sidgames101";
