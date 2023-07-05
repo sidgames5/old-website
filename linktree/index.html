@@ -2,39 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sid's Link Tree</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sid's Link Tree</title>
 
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="main.css">
+	<!-- <link rel="stylesheet" href="../style.css"> -->
+	<link rel="stylesheet" href="main.css">
 
-    <script src="links.js"></script>
+	<script src="links.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="top">
-            <h1>SidGames5</h1>
-            <p>Here are all of my links!</p>
-        </div>
-        <div class="links">
-            <details class="socialmedia">
-                <summary>Social Media</summary>
-                <button onclick="goto('youtube');">YouTube</button><br>
-                <button onclick="goto('discord');">Discord</button><br>
-                <button onclick="goto('tiktok');">TikTok</button><br>
-                <button onclick="goto('twitter');">Twitter</button><br>
-                <button onclick="goto('twitch');">Twitch</button><br>
-            </details>
-            <details class="others">
-                <summary>Other</summary>
-                <button onclick="goto('github');">GitHub</button><br>
-                <button onclick="goto('homepage');">Main Website Page</button>
-            </details>
-        </div>
-    </div>
+	<div class="container">
+		<div class="top">
+			<h1>SIDGAMES</h1>
+			<p>my link tree</p>
+		</div>
+		<div class="links">
+			<div class="channels">
+				<h2>CHANNELS</h2>
+				<div class="lbox">
+					<div class="link">
+						<button onclick="goto('ch.youtube1');">SidGames5</button>
+						<span>arch smp, devlogs, tutorials</span>
+					</div>
+					<div class="link">
+						<button onclick="goto('ch.youtube2');">SidGames6</button>
+						<span>vlogs, behind the scenes, random videos</span>
+					</div>
+				</div>
+			</div>
+			<div class="setup">
+				<h2>SETUP</h2>
+				<div class="lbox">
+					<div class="link">
+						<button onclick="goto('se.computer');">Computer</button>
+						<span>see my computer hardware and where to buy</span>
+					</div>
+					<div class="link">
+						<button onclick="goto('se.audio');">Audio Setup</button>
+						<span>see my audio gear and where to buy</span>
+					</div>
+					<div class="link">
+						<button onclick="goto('se.setup');">Computer Peripherals</button>
+						<span>see peripherals for my computer and where to buy</span>
+					</div>
+					<div class="link">
+						<button onclick="goto('se.servers');">Servers</button>
+						<span>see my servers and how i run them</span>
+					</div>
+				</div>
+			</div>
+			<div class="misc">
+				<h2>MISC</h2>
+				<div class="lbox">
+					<div class="link">
+						<button onclick="goto('ms.archsmp');">Arch SMP</button>
+						<span>the official arch smp website</span>
+					</div>
+					<div class="link">
+						<button onclick="goto('ms.homepage');">Homepage</button>
+						<span>the homepage for my website</span>
+					</div>
+					<div class="link">
+						<button onclick="goto('ms.github');">GitHub</button>
+						<span>my github profile</span>
+					</div>
+					<div class="link">
+						<button onclick="goto('ms.itchio');">Itch.io</button>
+						<span>my itch.io page</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
