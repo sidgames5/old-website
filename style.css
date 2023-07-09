@@ -71,3 +71,11 @@ button:hover {
 .lbox {
 	display: inline;
 }
+
+.featured {
+	border-width: 2.5px;
+	border-color: #00ff00;
+	border-radius: 10px;
+	border-style: solid;
+	padding-left: 10px;
+}
