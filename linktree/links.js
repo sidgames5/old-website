@@ -35,7 +35,7 @@ function goto(place) {
 			window.location.href = "https://basiccorruption.itch.io";
 			break;
 		case "sm.mastodon":
-			window.location.href = "https://mastodon.gamedev.place/@sidgames5";
+			window.location.href = "https://mastodon.social/@sidgames5";
 			break;
 
 		default:
