@@ -6,6 +6,9 @@ function goto(place) {
 		case "ch.youtube2":
 			window.location.href = "https://youtube.com/@sidgames6";
 			break;
+		case "ch.youtube3":
+			window.location.href = "https://youtube.com/@sidtalkslinux";
+			break;
 		case "se.computer":
 			window.location.href =
 				"https://sidgames5.github.io/setup/computer.html";
